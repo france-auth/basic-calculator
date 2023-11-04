@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="calculator">
+
+            <form name="myform">
+                <div class="input">
+                    <input type="text" name="display"  class="display">
+                </div>
+
+                <div>
+                    <input type="button" value="AC" onclick="ac()" class="operator">
+                    <input type="button" value="DEL" onclick="delBtn()" class="operator">
+                    <input type="button" value="." onclick="myClick('.')" class="operator">
+                    <input type="button" value="/" onclick="myClick('/')" class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="myClick('7')">
+                    <input type="button" value="8" onclick="myClick('8')">
+                    <input type="button" value="9" onclick="myClick('9')">
+                    <input type="button" value="*" onclick="myClick('*')" class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="myClick('4')">
+                    <input type="button" value="5" onclick="myClick('5')">
+                    <input type="button" value="6" onclick="myClick('6')">
+                    <input type="button" value="-" onclick="myClick('-')" class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="myClick('1')">
+                    <input type="button" value="2" onclick="myClick('2')">
+                    <input type="button" value="3" onclick="myClick('3')">
+                    <input type="button" value="+" onclick="myClick('+')" class="operator">
+                </div>
+                
+                <div>
+                    <input type="button" value="00" onclick="myClick('00')">
+                    <input type="button" value="0" onclick="myClick('0')">
+                    <input type="button" value="=" onclick="equalTo()" class="equal operator">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
